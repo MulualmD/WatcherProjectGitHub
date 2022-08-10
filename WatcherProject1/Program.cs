@@ -302,34 +302,7 @@ namespace WatcherProject1
             }
             return tags;
         }
-        //private static async void UplodaToGithub(string path, string readFilePath)
-        //{
-        //    var ghClient = new GitHubClient(new ProductHeaderValue("DemoApp"));
-
-        //    ghClient.Credentials = new Octokit.Credentials("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");
-        //    string owner = "mosmo46";
-        //    var repo = "DemoApp";
-        //    var master = "master";
-        //    try
-        //    {
-        //        var fileDetails = await ghClient.Repository.Content.GetAllContentsByRef(owner, repo,
-        //                                path, master);
-        //        var sha = fileDetails.First().Sha;
-
-        //        var updateResult = await ghClient.Repository.Content.UpdateFile(owner, repo, path,
-        //                                 new UpdateFileRequest("My updated file", ReadCSFile(readFilePath), sha));
-
-        //    }
-        //    catch (Octokit.NotFoundException)
-        //    {
-        //        await ghClient.Repository.Content.CreateFile(owner, repo, path, new CreateFileRequest("API File cs creation", "Hello Universe! " + DateTime.UtcNow, master));
-        //    }
-        //}
-        //private static string ReadCSFile(string readFilePath)
-        //{
-        //        string content = System.IO.File.ReadAllText(readFilePath);
-        //    return content;
-        //}
+      
 
 
 
