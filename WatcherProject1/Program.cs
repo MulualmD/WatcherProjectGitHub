@@ -61,6 +61,7 @@ namespace WatcherProject1
             fileSystemWatcher.IncludeSubdirectories = true;
 
             Console.WriteLine("Press enter to exit.");
+            Thread.Sleep(3000);
             ChecksForChangesInReopAndpull();
 
             Console.ReadLine();
@@ -90,7 +91,7 @@ namespace WatcherProject1
                             FastForwardStrategy = FastForwardStrategy.Default
                         }
                     };
-
+                    
                     MergeResult mergeResult = Commands.Pull(
                                    repo,
                                    new LibGit2Sharp.Signature("my name", "my email", DateTimeOffset.Now), // I dont want to provide these
@@ -150,7 +151,7 @@ namespace WatcherProject1
                         new UsernamePasswordCredentials()
                         {
                             Username = "MulualmD",
-                            Password = "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"
+                            Password = "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"
 
                         });
                 repo.Network.Push(repo.Network.Remotes["origin"], tag, options);
